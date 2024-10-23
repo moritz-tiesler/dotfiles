@@ -1,0 +1,8 @@
+git:
+  paging:
+    colorArg: always
+    pager: delta --dark --paging=never --line-numbers --syntax-theme 1337 -s
+gui:
+  theme:
+    selectedLineBgColor:
+      - reverse
