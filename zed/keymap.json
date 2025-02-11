@@ -28,9 +28,13 @@
   {
     "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
     "bindings": {
-      "space g g": [
-        "workspace::SendKeystrokes",
-        ": new center terminal enter lazygit space && space exit enter"
+      "space g g":
+      // [
+      //   "workspace::SendKeystrokes",
+      //   ": new center terminal enter lazygit space && space exit enter"
+      // ]
+      [
+        "task::Spawn", {"task_name": "lazygit"},
       ]
     }
   }
