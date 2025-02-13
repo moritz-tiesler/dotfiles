@@ -35,7 +35,16 @@
       // ]
       [
         "task::Spawn", {"task_name": "lazygit"},
-      ]
+      ],
+      "space g t":  "go_to_line::Toggle",
+
     }
-  }
+  },
+  {
+      "context": "Editor && vim_mode == visual && !menu",
+      "bindings": {
+        "v": "editor::SelectLargerSyntaxNode",
+        "V": "editor::SelectSmallerSyntaxNode"
+      }
+    }
 ]
