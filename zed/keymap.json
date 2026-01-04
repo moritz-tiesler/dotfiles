@@ -29,14 +29,16 @@
   {
     "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
     "bindings": {
-      "space g g":
-      // [
-      //   "workspace::SendKeystrokes",
-      //   ": new center terminal enter lazygit space && space exit enter"
-      // ]
-      [
-        "task::Spawn", {"task_name": "lazygit"},
+      "space g g": [
+        "task::Spawn",
+        {
+          "task_name": "lazygit",
+          "reveal_target": "center",
+        }
       ],
+      // [
+      //   "task::Spawn", {"task_name": "lazygit"},
+      // ],
       "space g t":  "go_to_line::Toggle",
 
     }

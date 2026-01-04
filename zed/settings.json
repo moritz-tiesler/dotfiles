@@ -12,8 +12,8 @@
   "buffer_font_size": 16,
   "theme": {
     "mode": "system",
-    "light": "Gruvbox Material",
-    "dark": "One Dark"
+    "light": "Naysayer",
+    "dark": "Naysayer"
   },
   "project_panel": {
     "indent_size": 10
