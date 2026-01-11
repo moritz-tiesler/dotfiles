@@ -36,6 +36,13 @@
           "reveal_target": "center",
         }
       ],
+      "space g l": [
+        "task::Spawn",
+        {
+          "task_name": "golangci-lint",
+          "reveal_target": "center",
+        }
+      ],
       // [
       //   "task::Spawn", {"task_name": "lazygit"},
       // ],
