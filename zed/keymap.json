@@ -8,12 +8,31 @@
 [
   {
     "context": "Workspace",
+
     "bindings": {
-      // "shift shift": "file_finder::Toggle",
-      "cmd-shift-j": "terminal_panel::ToggleFocus",
-      "ctrl-cmd-j": "workspace::OpenInTerminal",
+      "space space": "file_finder::Toggle",
+      "space tab": "tab_switcher::Toggle"
     }
   },
+  {
+      "context": "TabSwitcher",
+      "use_key_equivalents": true,
+      "bindings": {
+        "tab": "menu::SelectPrevious",
+        "k": "menu::SelectPrevious",
+        "j": "menu::SelectNext",
+        "d": "tab_switcher::CloseSelectedItem"
+      }
+  },
+  
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-shift-j": "terminal_panel::ToggleFocus",
+      "ctrl-cmd-j": "workspace::OpenInTerminal"
+    }
+  },
+
   {
     "context": "Editor",
     "bindings": {
@@ -33,20 +52,20 @@
         "task::Spawn",
         {
           "task_name": "lazygit",
-          "reveal_target": "center",
-        }
+          "reveal_target": "center"
+	}
       ],
       "space g l": [
         "task::Spawn",
         {
           "task_name": "golangci-lint",
-          "reveal_target": "center",
+          "reveal_target": "center"
         }
       ],
       // [
       //   "task::Spawn", {"task_name": "lazygit"},
       // ],
-      "space g t":  "go_to_line::Toggle",
+      "space g t":  "go_to_line::Toggle"
 
     }
   },
