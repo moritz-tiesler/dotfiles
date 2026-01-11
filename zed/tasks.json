@@ -53,5 +53,13 @@
     "reveal": "always",
     "reveal_target": "center",
     "hide": "always",
+  },
+  {
+    "label": "golangci-lint",
+    "command": "cd $ZED_WORKTREE_ROOT/be && golangci-lint run --new-from-merge-base main ./...",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+    "reveal_target": "center",
   }
 ]
