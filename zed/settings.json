@@ -11,18 +11,21 @@
   "ui_font_size": 16,
   "buffer_font_size": 16,
   "theme": {
-    "mode": "system",
+    "mode": "dark",
     "light": "Naysayer",
-    "dark": "Naysayer"
+    "dark": "Naysayer",
   },
   "project_panel": {
-    "indent_size": 10
+    "indent_size": 10,
   },
   "git": {
     "inline_blame": {
-      "enabled": false
-    }
+      "enabled": false,
+    },
   },
   "format_on_save": "off",
-  "buffer_font_family": "Fira Code"
+  "buffer_font_family": "Fira Code",
+  "vim": {
+    "use_system_clipboard": "on_yank"
+  }
 }
